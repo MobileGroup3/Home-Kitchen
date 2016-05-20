@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sample_kitchen_name"
+        android:id="@+id/kitchenName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textSize="@dimen/abc_text_size_medium_material"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sample_category"
+        android:id="@+id/kitchenCategory"
+        android:layout_below="@+id/kitchenName"
+        android:textSize="@dimen/abc_text_size_small_material"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="@dimen/view_horizontal_margin" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/imageView"
+        android:scaleType="centerCrop"
+        android:layout_below="@+id/kitchenCategory" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sample_dishes"
+        android:id="@+id/dishNumber"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/view_vertical_margin"
+        android:textSize="@dimen/abc_text_size_small_material"
+        android:layout_marginRight="@dimen/view_horizontal_margin" />
+
+</RelativeLayout>
