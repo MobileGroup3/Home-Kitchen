@@ -1,0 +1,8 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <item name="ic_action_favorite" type="drawable">@drawable/ic_action_favorite</item>
+    <item name="ic_action_order_history" type="drawable">drawable/ic_action_order_history</item>
+    <item name="ic_action_profile" type="drawable">drawable/ic_action_profile</item>
+    <item name="ic_action_shopping_cart" type="drawable">drawable/ic_action_shopping_cart</item>
+    <item name="ic_menu_share" type="drawable">@android:drawable/ic_menu_share</item>
+    <item name="ic_menu_send" type="drawable">@android:drawable/ic_menu_send</item>
+</resources>

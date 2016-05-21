@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         llm.setOrientation(LinearLayoutManager.VERTICAL);
         recList.setLayoutManager(llm);
 
-        adapter = new KitchenListAdapter(totalKitchens);
+        adapter = new KitchenListAdapter(this, totalKitchens);
         recList.setAdapter(adapter);
 
         QueryOptions queryOptions = new QueryOptions();

@@ -8,13 +8,19 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/kitchen_list" />
+            <option value="$PROJECT_DIR$/kitchen_management" />
+            <option value="$PROJECT_DIR$/placingorder" />
           </set>
         </option>
         <option name="myModules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/kitchen_list" />
+            <option value="$PROJECT_DIR$/kitchen_management" />
+            <option value="$PROJECT_DIR$/placingorder" />
           </set>
         </option>
       </GradleProjectSettings>

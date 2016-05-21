@@ -1,1 +1,1 @@
-include ':kitchen_list'
+include ':kitchen_list', ':kitchen_management', ':app', ':placingorder'
