@@ -12,6 +12,11 @@
     <string name="loading_login">Logging in…</string>
     <string name="loading_kitchens">Loading kitchens listing…</string>
 
+    <!-- search activity -->
+    <string name="search_hint">Search Kitchen</string>
+    <string name="search_label">Kitchens</string>
+    <string name="search_fail">Oops, there is no match...</string>
+
     <plurals name="dish_numbers">
         <item quantity="one">%d dish</item>
         <item quantity="other">%d dishes</item>

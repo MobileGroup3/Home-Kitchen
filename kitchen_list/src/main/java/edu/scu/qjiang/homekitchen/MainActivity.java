@@ -1,12 +1,17 @@
 package edu.scu.qjiang.homekitchen;
 
+import android.app.ActivityOptions;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.StaggeredGridLayoutManager;
-import android.widget.AbsListView;
-import android.widget.ListView;
+//import android.support.v7.widget.SearchView;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.view.Menu;
+import android.view.MenuInflater;
 
 import com.backendless.Backendless;
 import com.backendless.BackendlessCollection;
@@ -17,7 +22,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import edu.scu.qjiang.homekitchen.adapter.KitchenAdapter;
 import edu.scu.qjiang.homekitchen.adapter.KitchenListAdapter;
 import edu.scu.qjiang.homekitchen.entities.Kitchen;
 import edu.scu.qjiang.homekitchen.utility.BackendSettings;
@@ -39,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         Backendless.initApp( this, BackendSettings.APPLICATION_ID, BackendSettings.ANDROID_SECRET_KEY, BackendSettings.VERSION );
 
         RecyclerView recList = (RecyclerView) findViewById(R.id.kitchenList);
-        LinearLayoutManager llm = new LinearLayoutManager(this);
+        LinearLayoutManager llm = new LinearLayoutManager(getApplicationContext());
         llm.setOrientation(LinearLayoutManager.VERTICAL);
         recList.setLayoutManager(llm);
 
@@ -60,6 +64,16 @@ public class MainActivity extends AppCompatActivity {
                 addMoreItems(kitchensBackendlessCollection);
 
                 super.handleResponse(kitchensBackendlessCollection);
+            }
+        });
+
+        Button button = (Button) findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, SearchableActivity.class);
+                startActivity(intent);
+//                overridePendingTransition(R.anim.left_to_right, R.anim.right_to_left);
             }
         });
 
@@ -94,6 +108,33 @@ public class MainActivity extends AppCompatActivity {
 //                }
 //            }
 //        });
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.options_menu, menu);
+
+        // Associate searchable configuration with the SearchView
+//        SearchManager searchManager =
+//                (SearchManager) getSystemService(Context.SEARCH_SERVICE);
+//        SearchView searchView =
+//                (SearchView) menu.findItem(R.id.search).getActionView();
+//        searchView.setSearchableInfo(
+//                searchManager.getSearchableInfo(getComponentName()));
+
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if (id == R.id.search) {
+            Intent searchIntent = new Intent(MainActivity.this, SearchableActivity.class);
+            startActivity(searchIntent);
+//            overridePendingTransition(R.anim.left_to_right, R.anim.right_to_left);
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     /**For test of AsyncTask */
