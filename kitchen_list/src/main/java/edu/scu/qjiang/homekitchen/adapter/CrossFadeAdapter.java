@@ -51,8 +51,8 @@ public class CrossFadeAdapter extends PagerAdapter {
         options.inSampleSize = 8;
         Resources res = context.getResources();
         int id = image_resources[position];
-        Bitmap picture = BitmapFactory.decodeResource(res, id, options);
 
+        Bitmap picture = BitmapFactory.decodeResource(res, id, options);
         imageView.setImageBitmap(picture);
         container.addView(item_view);
         return item_view;

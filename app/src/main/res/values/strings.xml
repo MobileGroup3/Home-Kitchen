@@ -78,4 +78,10 @@
     <string name="pref_ringtone_silent">Silent</string>
 
     <string name="pref_title_vibrate">Vibrate</string>
+
+
+    <!-- search activity -->
+    <string name="search_hint">Search Kitchen</string>
+    <string name="search_label">Kitchens</string>
+    <string name="search_fail">Oops, there is no match...</string>
 </resources>

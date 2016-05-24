@@ -2,9 +2,6 @@ package edu.scu.qjiang.homekitchen.adapter;
 
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.os.AsyncTask;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -15,18 +12,18 @@ import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
 
-import java.io.InputStream;
 import java.util.List;
 
 import edu.scu.qjiang.homekitchen.R;
 import edu.scu.qjiang.homekitchen.entities.Kitchen;
-import edu.scu.ytong.placingorder.PlacingOrder;
+import edu.scu.ytong.placingorder.PlacingOrderActivity;
+import edu.scu.qjiang.homekitchen.AutoScrollViewPager;
 
 /**
  * Created by clover on 5/20/16.
  */
-public class KitchenListAdapter extends RecyclerView.Adapter<KitchenListAdapter.KitchenViewHolder> {
-    public static enum ITEM_TYPE {ITEM_TYPE_IMAGE, ITEM_TYPE_TEXT}
+public class KitchenListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+    public static enum ITEM_TYPE {ITEM_TYPE_HEADER, ITEM_TYPE_KITCHEN_LIST}
     private List<Kitchen> kitchens;
     private Context mContext;
 
@@ -35,6 +32,17 @@ public class KitchenListAdapter extends RecyclerView.Adapter<KitchenListAdapter.
     {
         this.mContext = context;
         this.kitchens = kitchens;
+    }
+
+    public static class HeaderViewHolder extends RecyclerView.ViewHolder {
+        protected AutoScrollViewPager viewPager;
+        protected CrossFadeAdapter crossAdapter;
+
+        public HeaderViewHolder(View view, Context context) {
+            super (view);
+            viewPager = (AutoScrollViewPager) view.findViewById(R.id.view_pager);
+            crossAdapter = new CrossFadeAdapter(context);
+        }
     }
 
     public static class KitchenViewHolder extends RecyclerView.ViewHolder {
@@ -54,67 +62,94 @@ public class KitchenListAdapter extends RecyclerView.Adapter<KitchenListAdapter.
 
     @Override
     public int getItemCount() {
-        return kitchens.size();
+//        Log.d("kitchen count is:", String.valueOf(kitchens.size()));
+        return kitchens.size() + 1;
     }
 
     @Override
-    public void onBindViewHolder(KitchenViewHolder kitchenViewHolder, int i) {
-        Kitchen item = kitchens.get(i);
-        kitchenViewHolder.kitchenNameView.setText(item.getKitchenName());
-        kitchenViewHolder.categoryView.setText(item.getCategory());
-        final String objectId = item.getObjectId();
-        if (item.getDish() != null) {
-            kitchenViewHolder.dishesNumberView.setText(String.valueOf(item.getDish().getDishItem().size()));
+    public void onBindViewHolder(RecyclerView.ViewHolder holder, int i) {
+        if (holder instanceof KitchenViewHolder) {
+            Kitchen item = kitchens.get(i-1);
+            ((KitchenViewHolder)holder).kitchenNameView.setText(item.getKitchenName());
+            ((KitchenViewHolder)holder).categoryView.setText(item.getCategory());
+            final String objectId = item.getObjectId();
+            /**display dish number */
+//            if (item.getDish() != null) {
+//                ((KitchenViewHolder)holder).dishesNumberView.setText(String.valueOf(item.getDish().getDishItem().size()));
+//            } else {
+//                ((KitchenViewHolder)holder).dishesNumberView.setText("No dish published yet");
+//            }
+            //        kitchenViewHolder.dishesNumberView.setText("2");
+            Picasso.with(mContext).load(item.getKitchenPic()).resize(512, 512).into(((KitchenViewHolder)holder).kitchenPic);
+
+            ((KitchenViewHolder)holder).kitchenPic.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent kitchenDetail = new Intent(mContext, PlacingOrderActivity.class);
+                    kitchenDetail.putExtra("object_id_extra_key", objectId);
+                    mContext.startActivity(kitchenDetail);
+                }
+            });
+            //        DownloadImageTask downloadImageTask = new DownloadImageTask(kitchenViewHolder.kitchenPic);
+            //        downloadImageTask.execute(item.getKitchenPic());
+        }
+        else if (holder instanceof HeaderViewHolder) {
+            ((HeaderViewHolder)holder).viewPager.setAdapter(((HeaderViewHolder)holder).crossAdapter);
+            ((HeaderViewHolder)holder).viewPager.startAutoScroll();
+        }
+    }
+
+    @Override
+    public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
+        if (i == ITEM_TYPE.ITEM_TYPE_HEADER.ordinal()) {
+            View itemView = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.header_crossfade, viewGroup, false);
+            return new HeaderViewHolder(itemView, mContext);
         }
         else {
-            kitchenViewHolder.dishesNumberView.setText("No dish published yet");
+            View itemView = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.custom_row, viewGroup, false);
+            return new KitchenViewHolder(itemView);
         }
-        //        kitchenViewHolder.dishesNumberView.setText("2");
-        Picasso.with(mContext).load(item.getKitchenPic()).into(kitchenViewHolder.kitchenPic);
-        kitchenViewHolder.kitchenPic.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent kitchenDetail = new Intent(mContext, PlacingOrder.class);
-                kitchenDetail.putExtra("object_id_extra_key", objectId);
-                mContext.startActivity(kitchenDetail);
-            }
-        });
-//        DownloadImageTask downloadImageTask = new DownloadImageTask(kitchenViewHolder.kitchenPic);
-//        downloadImageTask.execute(item.getKitchenPic());
     }
 
     @Override
-    public KitchenViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
-        View itemView = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.custom_row, viewGroup, false);
-        return new KitchenViewHolder(itemView);
+    public int getItemViewType(int position) {
+        return position == 0 ? ITEM_TYPE.ITEM_TYPE_HEADER.ordinal() : ITEM_TYPE.ITEM_TYPE_KITCHEN_LIST.ordinal();
     }
 
-    private class DownloadImageTask extends AsyncTask<String, Void, Bitmap> {
-        ImageView bmImage;
 
-        public DownloadImageTask(ImageView bmImage) {
-            this.bmImage = bmImage;
-        }
-        @Override
-        protected Bitmap doInBackground(String... urls) {
-            String urldisplay = urls[0];
-            Bitmap bm = null;
-            try {
-                InputStream is = new java.net.URL(urldisplay).openStream();
-//                BitmapFactory.Options options = new BitmapFactory.Options();
-//                options.inSampleSize = 8;
-//                bm = BitmapFactory.decodeStream(is, null, options);
-                bm = BitmapFactory.decodeStream(is);
-            } catch (Exception e) {
-                Log.e("Error", e.getMessage());
-                e.printStackTrace();
-            }
-            return bm;
-        }
+//    private class DownloadImageTask extends AsyncTask<String, Void, Bitmap> {
+//        ImageView bmImage;
+//
+//        public DownloadImageTask(ImageView bmImage) {
+//            this.bmImage = bmImage;
+//        }
+//        @Override
+//        protected Bitmap doInBackground(String... urls) {
+//            String urldisplay = urls[0];
+//            Bitmap bm = null;
+//            try {
+//                InputStream is = new java.net.URL(urldisplay).openStream();
+////                BitmapFactory.Options options = new BitmapFactory.Options();
+////                options.inSampleSize = 8;
+////                bm = BitmapFactory.decodeStream(is, null, options);
+//                bm = BitmapFactory.decodeStream(is);
+//            } catch (Exception e) {
+//                Log.e("Error", e.getMessage());
+//                e.printStackTrace();
+//            }
+//            return bm;
+//        }
+//
+//        @Override
+//        protected void onPostExecute(Bitmap result) {
+//            bmImage.setImageBitmap(result);
+//        }
+//    }
 
-        @Override
-        protected void onPostExecute(Bitmap result) {
-            bmImage.setImageBitmap(result);
-        }
-    }
+//    @Override
+//    public void destroyItem(View collection, int position, Object o) {
+//        View view = (View) o;
+//        ((AutoScrollViewPager) collection).removeView(view);
+//        view = null;
+//    }
 }

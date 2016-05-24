@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:id="@+id/text_view_order_dish_name"
+        android:text="DISH NAME" />
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:id="@+id/text_view_order_dish_price"
+        android:text="$10.0" />
+
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:id="@+id/text_view_order_quantity"
+        android:text="0" />
+
+</LinearLayout>

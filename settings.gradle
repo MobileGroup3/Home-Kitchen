@@ -1,1 +1,1 @@
-include ':kitchen_list', ':kitchen_management', ':app', ':placingorder', ':HK3-Login'
+include ':kitchen_list', ':kitchen_management', ':HK3-Login', ':placingorder', ':app'

@@ -9,7 +9,7 @@ import com.backendless.persistence.BackendlessDataQuery;
 
 public class Order
 {
-  private java.util.Date pickTime;
+  private String pickTime;
   private String ownerId;
   private java.util.Date updated;
   private String note;
@@ -17,12 +17,12 @@ public class Order
   private String objectId;
   private BackendlessUser customer;
   private java.util.List<OrderItem> orderItem;
-  public java.util.Date getPickTime()
+  public String getPickTime()
   {
     return pickTime;
   }
 
-  public void setPickTime( java.util.Date pickTime )
+  public void setPickTime( String pickTime )
   {
     this.pickTime = pickTime;
   }

@@ -19,7 +19,7 @@ import com.backendless.persistence.BackendlessDataQuery;
 import com.squareup.picasso.Picasso;
 
 import edu.scu.qjiang.homekitchen.utility.BackendSettings;
-import edu.scu.ytong.placingorder.PlacingOrder;
+import edu.scu.ytong.placingorder.PlacingOrderActivity;
 import edu.scu.ytong.placingorder.entities.Kitchen;
 
 public class SearchableActivity extends AppCompatActivity {
@@ -79,7 +79,7 @@ public class SearchableActivity extends AppCompatActivity {
                     kitchenPicView.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-                            Intent kitchenDetail = new Intent(getApplicationContext(), PlacingOrder.class);
+                            Intent kitchenDetail = new Intent(getApplicationContext(), PlacingOrderActivity.class);
                             kitchenDetail.putExtra("object_id_extra_key", objectId);
                             kitchenDetail.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                             getApplicationContext().startActivity(kitchenDetail);

@@ -8,12 +8,12 @@
         "source": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_tab_indicator_material.xml"
     },
     {
-        "merged": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/res/merged/debug/drawable/design_fab_background.xml",
-        "source": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/exploded-aar/com.android.support/design/23.3.0/res/drawable/design_fab_background.xml"
-    },
-    {
         "merged": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_dark.xml",
         "source": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/res/merged/debug/drawable/design_fab_background.xml",
+        "source": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/exploded-aar/com.android.support/design/23.3.0/res/drawable/design_fab_background.xml"
     },
     {
         "merged": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background_dark.xml",

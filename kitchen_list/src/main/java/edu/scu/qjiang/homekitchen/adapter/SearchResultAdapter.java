@@ -15,7 +15,7 @@ import java.util.List;
 
 import edu.scu.qjiang.homekitchen.R;
 import edu.scu.qjiang.homekitchen.entities.Kitchen;
-import edu.scu.ytong.placingorder.PlacingOrder;
+import edu.scu.ytong.placingorder.PlacingOrderActivity;
 
 /**
  * Created by clover on 5/21/16.
@@ -67,7 +67,7 @@ public class SearchResultAdapter extends RecyclerView.Adapter<SearchResultAdapte
         kitchenViewHolder.search_kitchenPic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent kitchenDetail = new Intent(mContext, PlacingOrder.class);
+                Intent kitchenDetail = new Intent(mContext, PlacingOrderActivity.class);
                 kitchenDetail.putExtra("object_id_extra_key", objectId);
                 mContext.startActivity(kitchenDetail);
             }

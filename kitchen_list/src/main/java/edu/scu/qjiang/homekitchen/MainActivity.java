@@ -1,21 +1,21 @@
 package edu.scu.qjiang.homekitchen;
 
-import android.app.ActivityOptions;
 import android.content.Intent;
-import android.media.Image;
-import android.net.Uri;
+import android.support.design.widget.NavigationView;
+import android.support.v4.view.GravityCompat;
 import android.support.v4.view.ViewPager;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-//import android.support.v7.widget.SearchView;
+import android.support.v7.widget.StaggeredGridLayoutManager;
+import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 import android.view.Menu;
 import android.view.MenuInflater;
-import android.widget.ImageView;
 
 import com.backendless.Backendless;
 import com.backendless.BackendlessCollection;
@@ -31,36 +31,62 @@ import edu.scu.qjiang.homekitchen.adapter.KitchenListAdapter;
 import edu.scu.qjiang.homekitchen.entities.Kitchen;
 import edu.scu.qjiang.homekitchen.utility.BackendSettings;
 import edu.scu.qjiang.homekitchen.utility.LoadingCallback;
-import edu.scu.ytong.homekitchen.NavigationActivity;
+import edu.scu.ytong.homekitchen.LoginActivity;
+import edu.scu.ytong.homekitchen.SettingsActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity
+        implements NavigationView.OnNavigationItemSelectedListener {
 
     private BackendlessCollection<Kitchen> kitchen;
     private List<Kitchen> totalKitchens = new ArrayList<>();
     private boolean isLoadingItems = false;
     private KitchenListAdapter adapter;
-    private ViewPager viewPager;
-    private CrossFadeAdapter crossAdapter;
-
+    private GridLayoutManager glm;
+    private int firstVisibleItem;
+    private int visibleItemCount;
+    private int totalItemCount;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        viewPager = (ViewPager)findViewById(R.id.view_pager);
-        crossAdapter = new CrossFadeAdapter(this);
-        viewPager.setAdapter(crossAdapter);
+        /** Navigation Drawer  */
+        Toolbar toolbar = (Toolbar) findViewById(edu.scu.ytong.placingorder.R.id.toolbar);
+        setSupportActionBar(toolbar);
 
-        Backendless.initApp( this, BackendSettings.APPLICATION_ID, BackendSettings.ANDROID_SECRET_KEY, BackendSettings.VERSION );
+        DrawerLayout drawer = (DrawerLayout) findViewById(edu.scu.ytong.homekitchen.R.id.drawer_layout);
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+                this, drawer, toolbar, edu.scu.ytong.homekitchen.R.string.navigation_drawer_open, edu.scu.ytong.homekitchen.R.string.navigation_drawer_close);
+        drawer.addDrawerListener(toggle);
+        toggle.syncState();
 
+        NavigationView navigationView = (NavigationView) findViewById(edu.scu.ytong.homekitchen.R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(this);
+
+        /** Set adapter */
         RecyclerView recList = (RecyclerView) findViewById(R.id.kitchenList);
-        LinearLayoutManager llm = new LinearLayoutManager(getApplicationContext());
-        llm.setOrientation(LinearLayoutManager.VERTICAL);
-        recList.setLayoutManager(llm);
+//        LinearLayoutManager llm = new LinearLayoutManager(getApplicationContext());
+//        llm.setOrientation(LinearLayoutManager.VERTICAL);
+//        recList.setLayoutManager(llm);
+
+//        StaggeredGridLayoutManager sglm = new StaggeredGridLayoutManager(3, 1);
+//        recList.setLayoutManager(sglm);
+        glm = new GridLayoutManager(this, 2, GridLayoutManager.VERTICAL, false);
+        glm.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
+            @Override
+            public int getSpanSize(int position) {
+                return (position == 0 ? 2 : 1);
+            }
+        });
+        recList.setLayoutManager(glm);
+
 
         adapter = new KitchenListAdapter(this, totalKitchens);
         recList.setAdapter(adapter);
+
+        /** Connect to Backendless to do database manipulations */
+        Backendless.initApp( this, BackendSettings.APPLICATION_ID, BackendSettings.ANDROID_SECRET_KEY, BackendSettings.VERSION );
 
         QueryOptions queryOptions = new QueryOptions();
         //queryOptions.setRelated(Arrays.asList("locations"));
@@ -79,19 +105,19 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button button = (Button) findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+//        Button button = (Button) findViewById(R.id.button);
+//        button.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
 //                Uri gmmIntentUri = Uri.parse("geo:0,0?q=1698 Hostetter Rd San Jose 95131");
 //                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
 //                mapIntent.setPackage("com.google.android.apps.maps");
-                Intent intent = new Intent(MainActivity.this, SearchableActivity.class);
-                startActivity(intent);
+//                Intent intent = new Intent(MainActivity.this, SearchableActivity.class);
+//                startActivity(intent);
 //                startActivity(mapIntent);
 //                overridePendingTransition(R.anim.left_to_right, R.anim.right_to_left);
-            }
-        });
+//            }
+//        });
 
 /**        For test of AsyncTask */
 //        hp = (TextView) findViewById(R.id.homepage);
@@ -124,6 +150,66 @@ public class MainActivity extends AppCompatActivity {
 //                }
 //            }
 //        });
+
+        recList.setOnScrollListener(new RecyclerView.OnScrollListener() {
+            @Override
+            public void onScrollStateChanged(RecyclerView view, int scrollState) {
+
+            }
+
+            @Override
+            public void onScrolled(RecyclerView view, int dx, int dy) {
+                if (dy > 0) {
+                    visibleItemCount = glm.getChildCount();
+                    totalItemCount = glm.getItemCount();
+                    firstVisibleItem = glm.findFirstVisibleItemPosition();
+
+                    if (needToLoadItems(firstVisibleItem, visibleItemCount, totalItemCount)) {
+                        isLoadingItems = true;
+
+                        kitchen.nextPage(new LoadingCallback<BackendlessCollection<Kitchen>>(MainActivity.this) {
+                            @Override
+                            public void handleResponse(BackendlessCollection<Kitchen> nextPage) {
+                                kitchen = nextPage;
+
+                                addMoreItems(nextPage);
+
+                                isLoadingItems = false;
+                            }
+                        });
+                    }
+
+                }
+            }
+        });
+    }
+
+    @Override
+    public boolean onNavigationItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        if (id == edu.scu.ytong.homekitchen.R.id.nav_shopping_cart) {
+            // Handle the camera action
+        } else if (id == edu.scu.ytong.homekitchen.R.id.nav_order_history) {
+
+        } else if (id == edu.scu.ytong.homekitchen.R.id.nav_favorite) {
+
+        } else if (id == edu.scu.ytong.homekitchen.R.id.nav_setting) {
+            Intent settingIntent = new Intent(this,SettingsActivity.class);
+            startActivity(settingIntent);
+
+
+        } else if (id == edu.scu.ytong.homekitchen.R.id.nav_profile) {
+
+        } else if (id == edu.scu.ytong.homekitchen.R.id.nav_log) {
+            Intent logIntent = new Intent(this,LoginActivity.class);
+            startActivity(logIntent);
+
+        }
+
+        DrawerLayout drawer = (DrawerLayout) findViewById(edu.scu.ytong.homekitchen.R.id.drawer_layout);
+        drawer.closeDrawer(GravityCompat.START);
+        return true;
     }
 
     @Override
@@ -190,4 +276,6 @@ public class MainActivity extends AppCompatActivity {
         totalKitchens.addAll( nextPage.getCurrentPage() );
         adapter.notifyDataSetChanged();
     }
+
+
 }
