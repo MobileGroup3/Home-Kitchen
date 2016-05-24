@@ -16,8 +16,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         String appVersion = "v1";
-        String appID = "99895A50-3FE5-6905-FF3E-9C004D4E1200";
-        String secretKey = "F7E0ACE0-0237-1D41-FF65-9443E0874900";
+        String appID = "6B06D541-69FC-AA24-FF52-EB6421144100";
+        String secretKey = "F2C00252-B60B-8048-FF2B-F2893504BD00";
         Backendless.initApp(this, appID, secretKey, appVersion);
 
         BackendlessUser user = new BackendlessUser();

@@ -64,10 +64,10 @@ public class KitchenAdapter extends ArrayAdapter<Kitchen> {
         final Kitchen item = getItem( position );
 //        Log.d("what??", item.getName());
 
-        kitchenNameView.setText( item.getName() );
+        kitchenNameView.setText( item.getKitchenName() );
         categoryView.setText( item.getCategory() );
-        String dishesNumberTextTemplate = getContext().getResources().getQuantityString( R.plurals.dish_numbers, item.getMenu().getMenuItem().size() );
-        dishesNumberView.setText( String.format( dishesNumberTextTemplate, item.getMenu().getMenuItem().size() ) );
+        String dishesNumberTextTemplate = getContext().getResources().getQuantityString( R.plurals.dish_numbers, item.getDish().getDishItem().size() );
+        dishesNumberView.setText( String.format( dishesNumberTextTemplate, item.getDish().getDishItem().size() ) );
 //        Log.d("dish number:", String.valueOf(item.getMenu().getMenuItem().size()));
 
         DownloadImageTask downloadImageTask = new DownloadImageTask(kitchenPic);

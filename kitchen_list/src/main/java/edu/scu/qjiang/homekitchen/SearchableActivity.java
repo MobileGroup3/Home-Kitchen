@@ -52,7 +52,7 @@ public class SearchableActivity extends AppCompatActivity {
     private void doMySearch(String query) {
         Backendless.initApp( this, BackendSettings.APPLICATION_ID, BackendSettings.ANDROID_SECRET_KEY, BackendSettings.VERSION );
 
-        String whereClause = "name = '" + query + "'";
+        String whereClause = "kitchenName = '" + query + "'";
         final BackendlessDataQuery dataQuery = new BackendlessDataQuery();
         dataQuery.setWhereClause(whereClause);
 
@@ -73,7 +73,7 @@ public class SearchableActivity extends AppCompatActivity {
                 if (kitchen != null) {
                     final String objectId = kitchen.getObjectId();
                     Log.d("object id is: ", objectId);
-                    kitchenNameView.setText(kitchen.getName());
+                    kitchenNameView.setText(kitchen.getKitchenName());
                     kitchenNameView.setVisibility(View.VISIBLE);
                     Picasso.with(getApplicationContext()).load(kitchen.getKitchenPic()).into(kitchenPicView);
                     kitchenPicView.setOnClickListener(new View.OnClickListener() {

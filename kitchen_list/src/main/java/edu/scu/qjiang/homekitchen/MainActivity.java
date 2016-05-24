@@ -2,6 +2,9 @@ package edu.scu.qjiang.homekitchen;
 
 import android.app.ActivityOptions;
 import android.content.Intent;
+import android.media.Image;
+import android.net.Uri;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -12,6 +15,7 @@ import android.view.View;
 import android.widget.Button;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.widget.ImageView;
 
 import com.backendless.Backendless;
 import com.backendless.BackendlessCollection;
@@ -22,10 +26,12 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import edu.scu.qjiang.homekitchen.adapter.CrossFadeAdapter;
 import edu.scu.qjiang.homekitchen.adapter.KitchenListAdapter;
 import edu.scu.qjiang.homekitchen.entities.Kitchen;
 import edu.scu.qjiang.homekitchen.utility.BackendSettings;
 import edu.scu.qjiang.homekitchen.utility.LoadingCallback;
+import edu.scu.ytong.homekitchen.NavigationActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,12 +39,18 @@ public class MainActivity extends AppCompatActivity {
     private List<Kitchen> totalKitchens = new ArrayList<>();
     private boolean isLoadingItems = false;
     private KitchenListAdapter adapter;
+    private ViewPager viewPager;
+    private CrossFadeAdapter crossAdapter;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        viewPager = (ViewPager)findViewById(R.id.view_pager);
+        crossAdapter = new CrossFadeAdapter(this);
+        viewPager.setAdapter(crossAdapter);
 
         Backendless.initApp( this, BackendSettings.APPLICATION_ID, BackendSettings.ANDROID_SECRET_KEY, BackendSettings.VERSION );
 
@@ -52,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
 
         QueryOptions queryOptions = new QueryOptions();
         //queryOptions.setRelated(Arrays.asList("locations"));
-        queryOptions.setRelated(Arrays.asList("menu"));
+        queryOptions.setRelated(Arrays.asList("dish"));
 
         BackendlessDataQuery query = new BackendlessDataQuery(queryOptions);
 
@@ -71,8 +83,12 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+//                Uri gmmIntentUri = Uri.parse("geo:0,0?q=1698 Hostetter Rd San Jose 95131");
+//                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+//                mapIntent.setPackage("com.google.android.apps.maps");
                 Intent intent = new Intent(MainActivity.this, SearchableActivity.class);
                 startActivity(intent);
+//                startActivity(mapIntent);
 //                overridePendingTransition(R.anim.left_to_right, R.anim.right_to_left);
             }
         });

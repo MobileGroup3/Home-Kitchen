@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/res/merged/debug/drawable-v21/ic_order_history.xml",
+        "source": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/exploded-aar/HomeKitchen/app/unspecified/res/drawable-v21/ic_order_history.xml"
+    },
+    {
+        "merged": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/res/merged/debug/drawable-v21/ic_menu_send.xml",
+        "source": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/exploded-aar/HomeKitchen/app/unspecified/res/drawable-v21/ic_menu_send.xml"
+    },
+    {
+        "merged": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/res/merged/debug/drawable-v21/ic_info_black_24dp.xml",
+        "source": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/exploded-aar/HomeKitchen/app/unspecified/res/drawable-v21/ic_info_black_24dp.xml"
+    },
+    {
+        "merged": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/res/merged/debug/drawable-v21/ic_menu_manage.xml",
+        "source": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/exploded-aar/HomeKitchen/app/unspecified/res/drawable-v21/ic_menu_manage.xml"
+    },
+    {
+        "merged": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/res/merged/debug/drawable-v21/ic_menu_slideshow.xml",
+        "source": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/exploded-aar/HomeKitchen/app/unspecified/res/drawable-v21/ic_menu_slideshow.xml"
+    },
+    {
+        "merged": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/res/merged/debug/drawable-v21/ic_notifications_black_24dp.xml",
+        "source": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/exploded-aar/HomeKitchen/app/unspecified/res/drawable-v21/ic_notifications_black_24dp.xml"
+    },
+    {
+        "merged": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/res/merged/debug/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/res/merged/debug/drawable-v21/abc_edit_text_material.xml",
+        "source": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable-v21/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/res/merged/debug/drawable-v21/ic_menu_share.xml",
+        "source": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/exploded-aar/HomeKitchen/app/unspecified/res/drawable-v21/ic_menu_share.xml"
+    },
+    {
+        "merged": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/res/merged/debug/drawable-v21/ic_menu_gallery.xml",
+        "source": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/exploded-aar/HomeKitchen/app/unspecified/res/drawable-v21/ic_menu_gallery.xml"
+    },
+    {
+        "merged": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/res/merged/debug/drawable-v21/ic_sync_black_24dp.xml",
+        "source": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/exploded-aar/HomeKitchen/app/unspecified/res/drawable-v21/ic_sync_black_24dp.xml"
+    },
+    {
+        "merged": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/res/merged/debug/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable-v21/abc_btn_colored_material.xml"
+    }
+]

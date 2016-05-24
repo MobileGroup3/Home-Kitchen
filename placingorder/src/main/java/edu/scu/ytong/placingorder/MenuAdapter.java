@@ -3,6 +3,7 @@ package edu.scu.ytong.placingorder;
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -12,16 +13,16 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
-import edu.scu.ytong.placingorder.entities.MenuItem;
+import edu.scu.ytong.placingorder.entities.DishItem;
 
 public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MyViewHolder> {
 
-    private List<MenuItem> menuItemList;
+    private List<DishItem> dishItemList;
     private Context context;
 
-    public MenuAdapter(Context context,List<MenuItem> menuItemList) {
+    public MenuAdapter(Context context,List<DishItem> dishItemList) {
         this.context = context;
-        this.menuItemList = menuItemList;
+        this.dishItemList = dishItemList;
     }
 
 
@@ -47,7 +48,7 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MyViewHolder> 
     @Override
     public int getItemCount() {
 
-        return menuItemList.size();
+        return dishItemList.size();
     }
 
     @Override
@@ -60,7 +61,7 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MyViewHolder> 
 
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
-        MenuItem dish = menuItemList.get(position);
+        DishItem dish = dishItemList.get(position);
         Picasso.with(context).load(dish.getPicture()).into( holder.dishImageView);
 
         holder.dishNameTextView.setText(dish.getName());
@@ -70,8 +71,8 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MyViewHolder> 
 
     }
 
-    public void setData(List<MenuItem> list) {
-        menuItemList = list;
+    public void setData(List<DishItem> list) {
+        dishItemList = list;
         notifyDataSetChanged();
 
     }

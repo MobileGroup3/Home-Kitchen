@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.backendless.hk3.login"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application android:label="@string/app_name">
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".PasswordRecoveryRequestedActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".RegistrationSuccessActivity" />
+        <activity android:name=".RestorePasswordActivity" />
+        <activity android:name=".LoginSuccessActivity" />
+
+        <activity android:name=".kitchen_list.KitchenHomepage"
+            android:configChanges="orientation|screenSize">
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable" />
+        </activity>
+
+        <activity android:name=".kitchen_list.SearchableActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable" />
+        </activity>
+
+        <meta-data android:name="android.app.searchable" android:resource="@xml/searchable" />
+
+        <service android:name="com.backendless.AndroidService" />
+    </application>
+
+</manifest>

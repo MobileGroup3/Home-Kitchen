@@ -53,11 +53,11 @@ public class SearchResultAdapter extends RecyclerView.Adapter<SearchResultAdapte
     @Override
     public void onBindViewHolder(SearchViewHolder kitchenViewHolder, int i) {
         Kitchen item = kitchens.get(i);
-        kitchenViewHolder.search_kitchenNameView.setText(item.getName());
+        kitchenViewHolder.search_kitchenNameView.setText(item.getKitchenName());
         kitchenViewHolder.search_categoryView.setText(item.getCategory());
         final String objectId = item.getObjectId();
-        if (item.getMenu() != null) {
-            kitchenViewHolder.search_dishesNumberView.setText(String.valueOf(item.getMenu().getMenuItem().size()));
+        if (item.getDish() != null) {
+            kitchenViewHolder.search_dishesNumberView.setText(String.valueOf(item.getDish().getDishItem().size()));
         }
         else {
             kitchenViewHolder.search_dishesNumberView.setText("No dish published yet");

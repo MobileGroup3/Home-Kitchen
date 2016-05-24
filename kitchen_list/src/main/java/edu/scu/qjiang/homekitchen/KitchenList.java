@@ -47,7 +47,7 @@ public class KitchenList extends ListActivity {
 
         QueryOptions queryOptions = new QueryOptions();
         //queryOptions.setRelated(Arrays.asList("locations"));
-        queryOptions.setRelated(Arrays.asList("menu"));
+        queryOptions.setRelated(Arrays.asList("dish"));
 
         BackendlessDataQuery query = new BackendlessDataQuery(queryOptions);
 

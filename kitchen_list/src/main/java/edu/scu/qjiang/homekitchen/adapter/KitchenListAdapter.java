@@ -26,8 +26,10 @@ import edu.scu.ytong.placingorder.PlacingOrder;
  * Created by clover on 5/20/16.
  */
 public class KitchenListAdapter extends RecyclerView.Adapter<KitchenListAdapter.KitchenViewHolder> {
+    public static enum ITEM_TYPE {ITEM_TYPE_IMAGE, ITEM_TYPE_TEXT}
     private List<Kitchen> kitchens;
     private Context mContext;
+
 
     public KitchenListAdapter(Context context, List<Kitchen> kitchens)
     {
@@ -58,11 +60,11 @@ public class KitchenListAdapter extends RecyclerView.Adapter<KitchenListAdapter.
     @Override
     public void onBindViewHolder(KitchenViewHolder kitchenViewHolder, int i) {
         Kitchen item = kitchens.get(i);
-        kitchenViewHolder.kitchenNameView.setText(item.getName());
+        kitchenViewHolder.kitchenNameView.setText(item.getKitchenName());
         kitchenViewHolder.categoryView.setText(item.getCategory());
         final String objectId = item.getObjectId();
-        if (item.getMenu() != null) {
-            kitchenViewHolder.dishesNumberView.setText(String.valueOf(item.getMenu().getMenuItem().size()));
+        if (item.getDish() != null) {
+            kitchenViewHolder.dishesNumberView.setText(String.valueOf(item.getDish().getDishItem().size()));
         }
         else {
             kitchenViewHolder.dishesNumberView.setText("No dish published yet");

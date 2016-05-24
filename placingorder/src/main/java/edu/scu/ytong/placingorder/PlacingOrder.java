@@ -1,22 +1,28 @@
 package edu.scu.ytong.placingorder;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
+import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.backendless.Backendless;
+import com.backendless.BackendlessUser;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import edu.scu.ytong.placingorder.entities.DishItem;
 import edu.scu.ytong.placingorder.entities.Kitchen;
-import edu.scu.ytong.placingorder.entities.MenuItem;
+import edu.scu.ytong.placingorder.entities.DishItem;
 
 public class PlacingOrder extends AppCompatActivity{
     public static final String OBJECT_ID_EXTRA_KEY = "object_id_extra_key";
@@ -26,7 +32,7 @@ public class PlacingOrder extends AppCompatActivity{
     RecyclerView menuRecyclerView;
     LinearLayoutManager llm;
     MenuAdapter menuAdapter;
-    List<MenuItem> menuItemList;
+    List<DishItem> dishItemList;
 
 
 
@@ -35,13 +41,12 @@ public class PlacingOrder extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_placing_order);
 
-        final String APPLICATION_ID = "99895A50-3FE5-6905-FF3E-9C004D4E1200";
-        final String ANDROID_SECRET_KEY = "F7E0ACE0-0237-1D41-FF65-9443E0874900";
+        final String APPLICATION_ID = "6B06D541-69FC-AA24-FF52-EB6421144100";
+        final String ANDROID_SECRET_KEY = "F2C00252-B60B-8048-FF2B-F2893504BD00";
         final String VERSION = "v1";
 
 
         Backendless.initApp( this, APPLICATION_ID, ANDROID_SECRET_KEY, VERSION);
-
 
         kitchenThumbImageView = (ImageView) findViewById(R.id.image_view_kitchen_thumb);
         kitchenNameTextView = (TextView) findViewById(R.id.text_view_kitchen_name);
@@ -53,8 +58,8 @@ public class PlacingOrder extends AppCompatActivity{
         llm.setOrientation(LinearLayoutManager.VERTICAL);
         menuRecyclerView.setLayoutManager(llm);
 
-        menuItemList= new ArrayList<MenuItem>();
-        menuAdapter = new MenuAdapter(getApplicationContext(),menuItemList);
+        dishItemList= new ArrayList<DishItem>();
+        menuAdapter = new MenuAdapter(getApplicationContext(),dishItemList);
         menuRecyclerView.setAdapter(menuAdapter);
 
 
@@ -66,10 +71,11 @@ public class PlacingOrder extends AppCompatActivity{
         new AsyncTask<Void,Void,Kitchen>() {
             @Override
             protected Kitchen doInBackground(Void... params) {
+                Log.d("Object ID is: ", objectId);
                 Kitchen kitchen  = Backendless.Persistence.of(Kitchen.class).findById(objectId);
                 ArrayList<String> relationProps = new ArrayList<String>();
-                relationProps.add("menu");
-                relationProps.add("menu.menuItem");
+                relationProps.add("dish");
+                relationProps.add("dish.dishItem");
                 Backendless.Data.of( Kitchen.class ).loadRelations(kitchen, relationProps);
                 return kitchen;
             }
@@ -77,14 +83,23 @@ public class PlacingOrder extends AppCompatActivity{
             @Override
             protected void onPostExecute(Kitchen kitchen) {
 
-                String name = kitchen.getName();
+                String name = kitchen.getKitchenName();
                 kitchenNameTextView.setText(name);
 
-                String address = kitchen.getStreet() + kitchen.getCity() + kitchen.getCountry();
+                final String address = kitchen.getStreet() + " " + kitchen.getCity();
                 addressButton.setText(address);
+                addressButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Uri gmmIntentUri = Uri.parse("geo:0,0?q=" + address);
+                        Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+                        mapIntent.setPackage("com.google.android.apps.maps");
+                        startActivity(mapIntent);
+                    }
+                });
 
-                if (kitchen.getMenu() != null) {
-                    List<MenuItem> list = kitchen.getMenu().getMenuItem();
+                if (kitchen.getDish() != null) {
+                    List<DishItem> list = kitchen.getDish().getDishItem();
                     menuAdapter.setData(list);
                 }
 
