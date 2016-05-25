@@ -1,0 +1,2 @@
+CHANGED,/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/backendless/hk3/login/kitchen_list/FollowedKitchenActivity$1.class
+CHANGED,/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/backendless/hk3/login/kitchen_list/FollowedKitchenActivity.class

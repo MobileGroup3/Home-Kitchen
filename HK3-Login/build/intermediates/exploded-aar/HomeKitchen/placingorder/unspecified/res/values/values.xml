@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="black">#000000</color>
+    <color name="blue">#ABCDEF</color>
     <color name="colorAccent">#FF4081</color>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
+    <color name="lightGrey">#ebebe0</color>
+    <color name="white">#ffffff</color>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="menu_item_space">8dp</dimen>
     <plurals name="restaurant_locations">
         <item quantity="one">%d location</item>
         <item quantity="other">%d locations</item>
@@ -24,6 +29,7 @@
     <string name="button_submit">Submit</string>
     <string name="cancel_button_description">cancel item</string>
     <string name="divider_or">OR</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="info_logged_in">Logged in. ObjectId: %s</string>
     <string name="info_registered_success">Registered successfully</string>
     <string name="info_registered_template">Registered. ObjectId: %s</string>
@@ -57,10 +63,14 @@
     <string name="warning_password_empty">Password cannot be empty</string>
     <string name="warning_passwords_do_not_match">Passwords do not match</string>
     <string name="zero">0</string>
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.Base" parent="Theme.AppCompat">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
     </style>
 </resources>

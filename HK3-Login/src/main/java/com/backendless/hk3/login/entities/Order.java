@@ -4,14 +4,12 @@ import com.backendless.Backendless;
 import com.backendless.BackendlessCollection;
 import com.backendless.BackendlessUser;
 import com.backendless.async.callback.AsyncCallback;
+import com.backendless.geo.GeoPoint;
 import com.backendless.persistence.BackendlessDataQuery;
 
-/**
- * Created by clover on 5/22/16.
- */
 public class Order
 {
-    private java.util.Date pickTime;
+    private String pickTime;
     private String ownerId;
     private java.util.Date updated;
     private String note;
@@ -19,12 +17,12 @@ public class Order
     private String objectId;
     private BackendlessUser customer;
     private java.util.List<OrderItem> orderItem;
-    public java.util.Date getPickTime()
+    public String getPickTime()
     {
         return pickTime;
     }
 
-    public void setPickTime( java.util.Date pickTime )
+    public void setPickTime( String pickTime )
     {
         this.pickTime = pickTime;
     }
@@ -205,7 +203,7 @@ public class Order
         Backendless.Data.of( Order.class ).findLast( callback );
     }
 
-    public static BackendlessCollection<Order> find(BackendlessDataQuery query )
+    public static BackendlessCollection<Order> find( BackendlessDataQuery query )
     {
         return Backendless.Data.of( Order.class ).find( query );
     }

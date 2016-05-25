@@ -71,9 +71,12 @@
     <string name="pref_title_vibrate">Vibrate</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password (optional)</string>
+    <string name="search_fail">Oops, there is no match...</string>
+    <string name="search_hint">Search Kitchen</string>
+    <string name="search_label">Kitchens</string>
     <string name="title_activity_login">Sign in</string>
     <string name="title_activity_settings">Settings</string>
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>

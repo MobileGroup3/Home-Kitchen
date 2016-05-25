@@ -61,17 +61,19 @@ public class KitchenAdapter extends ArrayAdapter<Kitchen> {
         TextView dishesNumberView = (TextView) view.findViewById( R.id.dishNumber );
         ImageView kitchenPic = (ImageView) view.findViewById(R.id.imageView);
 
-        final Kitchen item = getItem( position );
-//        Log.d("what??", item.getName());
+        if (position >= 0) {
+            final Kitchen item = getItem(position);
+            //        Log.d("what??", item.getName());
 
-        kitchenNameView.setText( item.getKitchenName() );
-        categoryView.setText( item.getCategory() );
-        String dishesNumberTextTemplate = getContext().getResources().getQuantityString( R.plurals.dish_numbers, item.getDish().getDishItem().size() );
-        dishesNumberView.setText( String.format( dishesNumberTextTemplate, item.getDish().getDishItem().size() ) );
-//        Log.d("dish number:", String.valueOf(item.getMenu().getMenuItem().size()));
+            kitchenNameView.setText(item.getKitchenName());
+            categoryView.setText(item.getCategory());
+            String dishesNumberTextTemplate = getContext().getResources().getQuantityString(R.plurals.dish_numbers, item.getDish().getDishItem().size());
+            dishesNumberView.setText(String.format(dishesNumberTextTemplate, item.getDish().getDishItem().size()));
+            //        Log.d("dish number:", String.valueOf(item.getMenu().getMenuItem().size()));
 
-        DownloadImageTask downloadImageTask = new DownloadImageTask(kitchenPic);
-        downloadImageTask.execute(item.getKitchenPic());
+            DownloadImageTask downloadImageTask = new DownloadImageTask(kitchenPic);
+            downloadImageTask.execute(item.getKitchenPic());
+        }
 
         return view;
     }

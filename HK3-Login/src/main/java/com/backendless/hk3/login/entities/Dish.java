@@ -5,7 +5,6 @@ import com.backendless.BackendlessCollection;
 import com.backendless.async.callback.AsyncCallback;
 import com.backendless.persistence.BackendlessDataQuery;
 
-import com.backendless.hk3.login.entities.Future;
 /**
  * Created by clover on 5/22/16.
  */
@@ -172,7 +171,7 @@ public class Dish
         Backendless.Data.of( Dish.class ).findLast( callback );
     }
 
-    public static BackendlessCollection<Dish> find(BackendlessDataQuery query )
+    public static BackendlessCollection<Dish> find( BackendlessDataQuery query )
     {
         return Backendless.Data.of( Dish.class ).find( query );
     }

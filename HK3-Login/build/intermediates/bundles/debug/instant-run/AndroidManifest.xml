@@ -39,8 +39,9 @@
         <activity android:name="com.backendless.hk3.login.RestorePasswordActivity" />
         <activity android:name="com.backendless.hk3.login.LoginSuccessActivity" />
         <activity
-            android:name="com.backendless.hk3.login.kitchen_list.KitchenHomepage"
-            android:configChanges="orientation|screenSize" >
+            android:name="com.backendless.hk3.login.kitchen_list.KitchenHomepageActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/HomePageTheme" >
             <meta-data
                 android:name="android.app.searchable"
                 android:resource="@xml/searchable" />
@@ -61,7 +62,21 @@
 
         <service android:name="com.backendless.AndroidService" />
 
-        <activity android:name="edu.scu.ytong.placingorder.PlacingOrder" >
+        <activity android:name="com.backendless.hk3.login.kitchen_list.FollowedKitchenActivity" />
+        <activity android:name="edu.scu.ytong.placingorder.PlacingOrderActivity" />
+        <activity android:name="edu.scu.ytong.placingorder.OrderConformationActivity" />
+        <activity
+            android:name="edu.scu.ytong.placingorder.TestActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="edu.scu.ytong.placingorder.CartToolbarActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity
             android:name="edu.scu.ytong.homekitchen.NavigationActivity"

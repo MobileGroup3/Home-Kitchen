@@ -20,36 +20,44 @@
         "source": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/select_dialog_multichoice_material.xml"
     },
     {
-        "merged": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/res/merged/debug/layout/design_navigation_item.xml",
-        "source": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/exploded-aar/com.android.support/design/23.3.0/res/layout/design_navigation_item.xml"
+        "merged": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/res/merged/debug/layout/shopping_cart_item_view.xml",
+        "source": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/exploded-aar/HomeKitchen/placingorder/unspecified/res/layout/shopping_cart_item_view.xml"
     },
     {
         "merged": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/res/merged/debug/layout/design_navigation_item_header.xml",
         "source": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/exploded-aar/com.android.support/design/23.3.0/res/layout/design_navigation_item_header.xml"
     },
     {
-        "merged": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
-        "source": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/notification_template_part_chronometer.xml"
+        "merged": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/res/merged/debug/layout/design_navigation_item.xml",
+        "source": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/exploded-aar/com.android.support/design/23.3.0/res/layout/design_navigation_item.xml"
     },
     {
         "merged": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/res/merged/debug/layout/custom_search_res.xml",
         "source": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/src/main/res/layout/custom_search_res.xml"
     },
     {
-        "merged": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
-        "source": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/abc_action_menu_item_layout.xml"
+        "merged": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
+        "source": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/notification_template_part_chronometer.xml"
     },
     {
-        "merged": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/res/merged/debug/layout/activity_placing_order.xml",
-        "source": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/exploded-aar/HomeKitchen/placingorder/unspecified/res/layout/activity_placing_order.xml"
+        "merged": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
+        "source": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/abc_action_menu_item_layout.xml"
     },
     {
         "merged": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/res/merged/debug/layout/activity_registe.xml",
         "source": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/exploded-aar/HomeKitchen/app/unspecified/res/layout/activity_registe.xml"
     },
     {
+        "merged": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/res/merged/debug/layout/activity_placing_order.xml",
+        "source": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/exploded-aar/HomeKitchen/placingorder/unspecified/res/layout/activity_placing_order.xml"
+    },
+    {
         "merged": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
         "source": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/res/merged/debug/layout/order_conformation_item_view.xml",
+        "source": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/exploded-aar/HomeKitchen/placingorder/unspecified/res/layout/order_conformation_item_view.xml"
     },
     {
         "merged": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow.xml",
@@ -78,6 +86,10 @@
     {
         "merged": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
         "source": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/res/merged/debug/layout/activity_followed_kitchen.xml",
+        "source": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/src/main/res/layout/activity_followed_kitchen.xml"
     },
     {
         "merged": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
@@ -132,8 +144,16 @@
         "source": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/exploded-aar/com.android.support/design/23.3.0/res/layout/design_layout_tab_text.xml"
     },
     {
+        "merged": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/res/merged/debug/layout/custom_homepage_row.xml",
+        "source": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/src/main/res/layout/custom_homepage_row.xml"
+    },
+    {
         "merged": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/res/merged/debug/layout/activity_navigation.xml",
         "source": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/exploded-aar/HomeKitchen/app/unspecified/res/layout/activity_navigation.xml"
+    },
+    {
+        "merged": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/res/merged/debug/layout/activity_cart_toolbar.xml",
+        "source": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/exploded-aar/HomeKitchen/placingorder/unspecified/res/layout/activity_cart_toolbar.xml"
     },
     {
         "merged": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
@@ -164,6 +184,10 @@
         "source": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/exploded-aar/com.android.support/design/23.3.0/res/layout/design_layout_snackbar.xml"
     },
     {
+        "merged": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/res/merged/debug/layout/custom_followed_list.xml",
+        "source": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/src/main/res/layout/custom_followed_list.xml"
+    },
+    {
         "merged": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/res/merged/debug/layout/password_recovery_requested.xml",
         "source": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/src/main/res/layout/password_recovery_requested.xml"
     },
@@ -176,8 +200,16 @@
         "source": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/exploded-aar/com.android.support/design/23.3.0/res/layout/design_layout_tab_icon.xml"
     },
     {
+        "merged": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/res/merged/debug/layout/fragment_blank.xml",
+        "source": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/exploded-aar/HomeKitchen/placingorder/unspecified/res/layout/fragment_blank.xml"
+    },
+    {
         "merged": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/res/merged/debug/layout/create_kitchen.xml",
         "source": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/src/main/res/layout/create_kitchen.xml"
+    },
+    {
+        "merged": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/res/merged/debug/layout/custom_crossfade.xml",
+        "source": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/src/main/res/layout/custom_crossfade.xml"
     },
     {
         "merged": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
@@ -212,16 +244,16 @@
         "source": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/exploded-aar/HomeKitchen/app/unspecified/res/layout/activity_main.xml"
     },
     {
-        "merged": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/res/merged/debug/layout/custom_row.xml",
-        "source": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/src/main/res/layout/custom_row.xml"
-    },
-    {
         "merged": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
         "source": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/abc_action_bar_view_list_nav_layout.xml"
     },
     {
         "merged": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/res/merged/debug/layout/nav_header_navigation.xml",
         "source": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/exploded-aar/HomeKitchen/app/unspecified/res/layout/nav_header_navigation.xml"
+    },
+    {
+        "merged": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/res/merged/debug/layout/activity_order_conformation.xml",
+        "source": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/exploded-aar/HomeKitchen/placingorder/unspecified/res/layout/activity_order_conformation.xml"
     },
     {
         "merged": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
@@ -274,6 +306,10 @@
     {
         "merged": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/res/merged/debug/layout/register.xml",
         "source": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/src/main/res/layout/register.xml"
+    },
+    {
+        "merged": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/res/merged/debug/layout/header_crossfade.xml",
+        "source": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/src/main/res/layout/header_crossfade.xml"
     },
     {
         "merged": "/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/res/merged/debug/layout/design_menu_item_action_area.xml",

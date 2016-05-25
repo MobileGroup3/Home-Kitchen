@@ -1,2 +1,0 @@
-CHANGED,/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/edu/scu/ytong/placingorder/PlacingOrder$override.class
-CHANGED,/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class

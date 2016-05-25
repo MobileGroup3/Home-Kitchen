@@ -2,12 +2,11 @@ package com.backendless.hk3.login.entities;
 
 import com.backendless.Backendless;
 import com.backendless.BackendlessCollection;
+import com.backendless.BackendlessUser;
 import com.backendless.async.callback.AsyncCallback;
+import com.backendless.geo.GeoPoint;
 import com.backendless.persistence.BackendlessDataQuery;
 
-/**
- * Created by clover on 5/22/16.
- */
 public class OrderItem
 {
     private java.util.Date created;
@@ -182,7 +181,7 @@ public class OrderItem
         Backendless.Data.of( OrderItem.class ).findLast( callback );
     }
 
-    public static BackendlessCollection<OrderItem> find(BackendlessDataQuery query )
+    public static BackendlessCollection<OrderItem> find( BackendlessDataQuery query )
     {
         return Backendless.Data.of( OrderItem.class ).find( query );
     }

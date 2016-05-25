@@ -11,21 +11,13 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 import com.backendless.Backendless;
 import com.backendless.BackendlessUser;
-import com.backendless.hk3.login.kitchen_list.KitchenHomepage;
 
-import edu.scu.ytong.homekitchen.MainActivity;
-//import com.backendless.hk3.login.com.backendless.hk3.login.kitchen.CreateKitchen;
+import com.backendless.hk3.login.kitchen_list.KitchenHomepageActivity;
 
-//import edu.scu.qjiang.homekitchen.MainActivity;
-
-public class LoginActivity extends AppCompatActivity
+public class LoginActivity extends Activity
 {
   private TextView registerLink, restoreLink;
   private EditText identityField, passwordField;
@@ -61,8 +53,7 @@ public class LoginActivity extends AppCompatActivity
               {
                 super.handleResponse( currentUser );
                 Backendless.UserService.setCurrentUser( currentUser );
-                  HK3User user = (HK3User)currentUser;
-                startActivity( new Intent( getBaseContext(), KitchenHomepage.class ) );
+                startActivity( new Intent( getBaseContext(), KitchenHomepageActivity.class ) );
                 finish();
               }
             } );
@@ -131,7 +122,7 @@ public class LoginActivity extends AppCompatActivity
       public void handleResponse( BackendlessUser backendlessUser )
       {
         super.handleResponse( backendlessUser );
-        startActivity( new Intent( LoginActivity.this, KitchenHomepage.class ) );
+        startActivity( new Intent( LoginActivity.this, KitchenHomepageActivity.class ) );
         finish();
       }
     }, rememberLogin );

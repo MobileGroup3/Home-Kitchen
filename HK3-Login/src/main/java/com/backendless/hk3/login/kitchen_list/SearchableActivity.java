@@ -21,7 +21,7 @@ import com.backendless.hk3.login.utility.BackendSettings;
 import com.backendless.persistence.BackendlessDataQuery;
 import com.squareup.picasso.Picasso;
 
-import edu.scu.ytong.placingorder.PlacingOrder;
+import edu.scu.ytong.placingorder.PlacingOrderActivity;
 
 public class SearchableActivity extends AppCompatActivity {
     private TextView kitchenNameView;
@@ -33,7 +33,7 @@ public class SearchableActivity extends AppCompatActivity {
         setContentView(R.layout.activity_searchable);
         handleIntent(getIntent());
 
-        kitchenNameView = (TextView) findViewById( R.id.search_kitchenName );
+        kitchenNameView = (TextView) findViewById(R.id.search_kitchenName );
         kitchenPicView = (ImageView) findViewById(R.id.search_imageView);
     }
 
@@ -56,6 +56,7 @@ public class SearchableActivity extends AppCompatActivity {
         String whereClause = "kitchenName = '" + query + "'";
         final BackendlessDataQuery dataQuery = new BackendlessDataQuery();
         dataQuery.setWhereClause(whereClause);
+        Log.d("Search query is: ", dataQuery.toString());
 
         new AsyncTask<Void,Void,Kitchen>() {
             @Override
@@ -80,7 +81,7 @@ public class SearchableActivity extends AppCompatActivity {
                     kitchenPicView.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-                            Intent kitchenDetail = new Intent(getApplicationContext(), PlacingOrder.class);
+                            Intent kitchenDetail = new Intent(getApplicationContext(), PlacingOrderActivity.class);
                             kitchenDetail.putExtra("object_id_extra_key", objectId);
                             kitchenDetail.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                             getApplicationContext().startActivity(kitchenDetail);

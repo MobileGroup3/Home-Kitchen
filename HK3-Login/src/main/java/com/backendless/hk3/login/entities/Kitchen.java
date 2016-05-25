@@ -14,13 +14,14 @@ public class Kitchen
     private String street;
     private String kitchenName;
     private String city;
-    private String country;
+    private String zipcode;
     private String objectId;
     private String kitchenPic;
     private String phoneNumber;
     private String category;
     private java.util.Date updated;
     private String email;
+    private String country;
     private String ownerId;
     private java.util.Date created;
     private BackendlessUser owner;
@@ -55,14 +56,14 @@ public class Kitchen
         this.city = city;
     }
 
-    public String getCountry()
+    public String getZipcode()
     {
-        return country;
+        return zipcode;
     }
 
-    public void setCountry( String country )
+    public void setZipcode( String zipcode )
     {
-        this.country = country;
+        this.zipcode = zipcode;
     }
 
     public String getObjectId()
@@ -113,6 +114,16 @@ public class Kitchen
     public void setEmail( String email )
     {
         this.email = email;
+    }
+
+    public String getCountry()
+    {
+        return country;
+    }
+
+    public void setCountry( String country )
+    {
+        this.country = country;
     }
 
     public String getOwnerId()
@@ -271,7 +282,7 @@ public class Kitchen
         Backendless.Data.of( Kitchen.class ).findLast( callback );
     }
 
-    public static BackendlessCollection<Kitchen> find(BackendlessDataQuery query )
+    public static BackendlessCollection<Kitchen> find( BackendlessDataQuery query )
     {
         return Backendless.Data.of( Kitchen.class ).find( query );
     }

@@ -20,7 +20,20 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="edu.scu.ytong.placingorder.PlacingOrder" >
+        <activity android:name="edu.scu.ytong.placingorder.PlacingOrderActivity" />
+        <activity android:name="edu.scu.ytong.placingorder.OrderConformationActivity" />
+        <activity
+            android:name="edu.scu.ytong.placingorder.TestActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="edu.scu.ytong.placingorder.CartToolbarActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
         </activity>
     </application>
 

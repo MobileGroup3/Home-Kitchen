@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lightGrey"
+    tools:context="edu.scu.ytong.placingorder.OrderConformationActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:paddingLeft="5dp"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:text="Order Pick Address"/>
+
+    <TextView
+        android:id="@+id/text_view_order_address"
+        android:layout_width="match_parent"
+        android:paddingLeft="5dp"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:text="Address Detail"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/lightGrey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="5dp"
+            android:gravity="center_vertical"
+            android:text="Phone Number"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+            android:id="@+id/text_view_order_phone"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/lightGrey" />
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:id="@+id/list_view_order_dish">
+
+    </ListView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/lightGrey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="5dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="TOTAL AMOUNT"/>
+
+        <TextView
+            android:id="@+id/text_view_order_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="10dp"
+            android:gravity="center_vertical"
+            android:text="$100"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/lightGrey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="5dp"
+            android:gravity="center_vertical"
+            android:text="Leave Note"/>
+
+        <EditText
+            android:id="@+id/edit_text_note"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Optional"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/lightGrey" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="5dp"
+            android:gravity="center_vertical"
+            android:text="Choose Your Pick Time"/>
+
+        <Button
+            android:id="@+id/button_time_picker"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="TIME"
+            android:layout_alignParentRight="true"
+            android:onClick="showTimePickerDialog"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <Button
+            android:id="@+id/button_order_conform"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:text="Conform Order"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
+

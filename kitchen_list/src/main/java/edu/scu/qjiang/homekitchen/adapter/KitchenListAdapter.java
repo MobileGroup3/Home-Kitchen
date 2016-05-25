@@ -3,7 +3,6 @@ package edu.scu.qjiang.homekitchen.adapter;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,6 +25,7 @@ public class KitchenListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
     public static enum ITEM_TYPE {ITEM_TYPE_HEADER, ITEM_TYPE_KITCHEN_LIST}
     private List<Kitchen> kitchens;
     private Context mContext;
+    private List<Kitchen> kitchenList;
 
 
     public KitchenListAdapter(Context context, List<Kitchen> kitchens)
@@ -106,7 +106,7 @@ public class KitchenListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
             return new HeaderViewHolder(itemView, mContext);
         }
         else {
-            View itemView = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.custom_row, viewGroup, false);
+            View itemView = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.custom_homepage_row, viewGroup, false);
             return new KitchenViewHolder(itemView);
         }
     }
@@ -114,6 +114,11 @@ public class KitchenListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
     @Override
     public int getItemViewType(int position) {
         return position == 0 ? ITEM_TYPE.ITEM_TYPE_HEADER.ordinal() : ITEM_TYPE.ITEM_TYPE_KITCHEN_LIST.ordinal();
+    }
+
+    public void setData(List<Kitchen> list) {
+        kitchenList = list;
+        notifyDataSetChanged();
     }
 
 
