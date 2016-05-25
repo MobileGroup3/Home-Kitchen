@@ -21,7 +21,7 @@ import com.backendless.hk3.login.utility.BackendSettings;
 import com.backendless.persistence.BackendlessDataQuery;
 import com.squareup.picasso.Picasso;
 
-import edu.scu.ytong.placingorder.PlacingOrderActivity;
+import com.backendless.hk3.login.placingorder.PlacingOrderActivity;
 
 public class SearchableActivity extends AppCompatActivity {
     private TextView kitchenNameView;

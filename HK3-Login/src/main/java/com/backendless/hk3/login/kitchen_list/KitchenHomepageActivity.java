@@ -1,12 +1,12 @@
 package com.backendless.hk3.login.kitchen_list;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
@@ -18,8 +18,11 @@ import android.view.MenuItem;
 import com.backendless.Backendless;
 import com.backendless.BackendlessCollection;
 import com.backendless.hk3.login.R;
+import com.backendless.hk3.login.entities.Kitchen;
 import com.backendless.hk3.login.kitchen_list.adapter.KitchenListAdapter;
+import com.backendless.hk3.login.placingorder.OrderHistoryActivity;
 import com.backendless.hk3.login.utility.BackendSettings;
+import com.backendless.hk3.login.utility.LoadingCallback;
 import com.backendless.persistence.BackendlessDataQuery;
 import com.backendless.persistence.QueryOptions;
 
@@ -27,8 +30,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import com.backendless.hk3.login.entities.Kitchen;
-import com.backendless.hk3.login.utility.LoadingCallback;
+
+//import edu.scu.ytong.homekitchen.SettingsActivity;
 
 
 public class KitchenHomepageActivity extends AppCompatActivity
@@ -55,7 +58,7 @@ public class KitchenHomepageActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         Log.d("Where", drawer.toString());
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, edu.scu.ytong.homekitchen.R.string.navigation_drawer_open, edu.scu.ytong.homekitchen.R.string.navigation_drawer_close);
+                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
@@ -186,22 +189,27 @@ public class KitchenHomepageActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         int id = item.getItemId();
 
-        if (id == edu.scu.ytong.homekitchen.R.id.nav_shopping_cart) {
+        if (id == R.id.nav_shopping_cart) {
             // Handle the camera action
-        } else if (id == edu.scu.ytong.homekitchen.R.id.nav_order_history) {
+        } else if (id == R.id.nav_order_history) {
+            Intent intent = new Intent(KitchenHomepageActivity.this, OrderHistoryActivity.class);
+            startActivity(intent);
 
-        } else if (id == edu.scu.ytong.homekitchen.R.id.nav_favorite) {
+        } else if (id == R.id.nav_favorite) {
+            Intent intent = new Intent(KitchenHomepageActivity.this, FollowedKitchenActivity.class);
+            startActivity(intent);
 
-        } else if (id == edu.scu.ytong.homekitchen.R.id.nav_setting) {
-            Intent settingIntent = new Intent(this, edu.scu.ytong.homekitchen.SettingsActivity.class);
-            startActivity(settingIntent);
+        } else if (id == R.id.nav_setting) {
+//            Intent settingIntent = new Intent(this, SettingsActivity.class);
+//            startActivity(settingIntent);
 
 
-        } else if (id == edu.scu.ytong.homekitchen.R.id.nav_profile) {
+        } else if (id == R.id.nav_profile) {
 
-        } else if (id == edu.scu.ytong.homekitchen.R.id.nav_log) {
-            Intent logIntent = new Intent(this, edu.scu.ytong.homekitchen.LoginActivity.class);
-            startActivity(logIntent);
+        } else if (id == R.id.nav_log) {
+             // Add Log Out
+//            Intent logIntent = new Intent(this, edu.scu.ytong.homekitchen.LoginActivity.class);
+//            startActivity(logIntent);
 
         }
 

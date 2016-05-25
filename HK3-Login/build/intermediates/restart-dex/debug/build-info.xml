@@ -1,57 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
     abi="armeabi-v7a,armeabi"
-    api-level="23"
+    api-level="22"
     density="xxhdpi"
     format="7"
-    timestamp="106880300483778"
-    verifier="COMPATIBLE" >
+    timestamp="42642069287063" >
 
     <task
         name="javac"
-        duration="1090" />
+        duration="0" />
     <task
         name="instant-run-dex"
-        duration="804" />
+        duration="0" />
     <task
         name="instant-run-transform"
-        duration="17" />
+        duration="0" />
     <task
         name="verifier"
-        duration="2" />
+        duration="0" />
 
     <artifact
-        location="/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/reload-dex/debug/classes.dex"
-        type="RELOAD_DEX" />
+        location="/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex"
+        type="DEX" />
 
-    <build timestamp="103350803103764" >
+    <build timestamp="41018714155112" >
         <artifact
-            location="/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/outputs/apk/HK3-Login-debug.apk"
+            location="/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/outputs/apk/HK3-Login-debug.apk"
             type="MAIN" />
     </build>
-    <build timestamp="103543904736595" >
+    <build
+        timestamp="42469096364982"
+        verifier="PARENT_CLASS_CHANGED" >
         <artifact
-            location="/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/res/resources-debug.ap_"
-            type="RESOURCES" />
-    </build>
-    <build timestamp="106254574517622" >
-        <artifact
-            location="/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex"
+            location="/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex"
             type="DEX" />
     </build>
-    <build
-        timestamp="106829220671257"
-        verifier="COMPATIBLE" >
+    <build timestamp="42642069287063" >
         <artifact
-            location="/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/builds/debug/106829220671257/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        timestamp="106880300483778"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/Users/clover/AndroidStudioProjects/HomeKitchen/HK3-Login/build/intermediates/reload-dex/debug/classes.dex"
-            type="RELOAD_DEX" />
+            location="/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex"
+            type="DEX" />
     </build>
 
 </instant-run>

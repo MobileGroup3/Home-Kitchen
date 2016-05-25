@@ -59,6 +59,11 @@
         <service android:name="com.backendless.AndroidService" />
 
         <activity android:name=".kitchen_list.FollowedKitchenActivity"></activity>
+
+        <activity android:name=".placingorder.PlacingOrderActivity"/>
+        <activity android:name=".placingorder.OrderConformationActivity" />
+        <activity android:name=".placingorder.OrderHistoryActivity" />
+
     </application>
 
 </manifest>

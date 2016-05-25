@@ -34,7 +34,7 @@ android {
     defaultConfig {
         applicationId "com.backendless.hk3.login"
         minSdkVersion 18
-        targetSdkVersion 23
+        targetSdkVersion 22
         versionCode 1
         versionName "1.0"
     }
@@ -52,10 +52,12 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.3.0'
     compile 'com.android.support:recyclerview-v7:23.0.+'
     compile 'com.android.support:cardview-v7:23.0.+'
+    compile 'com.android.support:design:23.3.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
     //    compile 'com.backendless:android:1.0'
-        compile project(':placingorder')
+//        compile project(':placingorder')
 //    compile project(':kitchen_list')
-//    compile project(':app')
+    compile project(':app')
 
 }
 //dependencies {

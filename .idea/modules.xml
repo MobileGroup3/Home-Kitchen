@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/HK3-Login/HK3-Login.iml" filepath="$PROJECT_DIR$/HK3-Login/HK3-Login.iml" />
-      <module fileurl="file://$PROJECT_DIR$/HomeKitchen.iml" filepath="$PROJECT_DIR$/HomeKitchen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HomeKitchenProject.iml" filepath="$PROJECT_DIR$/HomeKitchenProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/kitchen_list/kitchen_list.iml" filepath="$PROJECT_DIR$/kitchen_list/kitchen_list.iml" />
       <module fileurl="file://$PROJECT_DIR$/placingorder/placingorder.iml" filepath="$PROJECT_DIR$/placingorder/placingorder.iml" />

@@ -19,4 +19,5 @@
     <dimen name="header_margin">64dp</dimen>
     <dimen name="view_horizontal_margin">8dp</dimen>
     <dimen name="view_vertical_margin">8dp</dimen>
+    <dimen name="menu_item_space">8dp</dimen>
 </resources>

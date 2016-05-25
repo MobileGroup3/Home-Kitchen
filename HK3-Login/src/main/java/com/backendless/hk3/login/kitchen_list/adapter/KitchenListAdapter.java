@@ -10,13 +10,12 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.backendless.hk3.login.R;
+import com.backendless.hk3.login.entities.Kitchen;
+import com.backendless.hk3.login.kitchen_list.AutoScrollViewPager;
+import com.backendless.hk3.login.placingorder.PlacingOrderActivity;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
-
-import com.backendless.hk3.login.entities.Kitchen;
-import com.backendless.hk3.login.kitchen_list.AutoScrollViewPager;
-import edu.scu.ytong.placingorder.PlacingOrderActivity;
 
 /**
  * Created by clover on 5/24/16.

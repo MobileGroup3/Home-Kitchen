@@ -4,7 +4,6 @@ import com.backendless.Backendless;
 import com.backendless.BackendlessCollection;
 import com.backendless.BackendlessUser;
 import com.backendless.async.callback.AsyncCallback;
-import com.backendless.geo.GeoPoint;
 import com.backendless.persistence.BackendlessDataQuery;
 
 public class Order
@@ -17,6 +16,19 @@ public class Order
     private String objectId;
     private BackendlessUser customer;
     private java.util.List<OrderItem> orderItem;
+    private String kitchen_object_id;
+    private String kitchen_name;
+    double totalAmount;
+
+    public double getTotalAmount() { return  totalAmount;}
+    public void setTotalAmount(double totalAmount) {this.totalAmount = totalAmount; }
+
+    public String getKitchen_name() {return kitchen_name;}
+    public void setKitchen_name(String kitchen_name) {this.kitchen_name = kitchen_name; }
+
+    public String getKitchen_object_id() {return  kitchen_object_id;}
+    public void setKitchen_object_id(String kitchen_object_id) { this.kitchen_object_id = kitchen_object_id; }
+
     public String getPickTime()
     {
         return pickTime;
@@ -203,7 +215,7 @@ public class Order
         Backendless.Data.of( Order.class ).findLast( callback );
     }
 
-    public static BackendlessCollection<Order> find( BackendlessDataQuery query )
+    public static BackendlessCollection<Order> find(BackendlessDataQuery query )
     {
         return Backendless.Data.of( Order.class ).find( query );
     }

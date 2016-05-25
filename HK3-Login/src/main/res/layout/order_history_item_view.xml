@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="@dimen/cardview_compat_inset_shadow"
+    android:elevation="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_view_kitchen_name"
+            android:textSize="20dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightGrey" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/image_view_dish_one"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/image_view_dish_one"
+                android:id="@+id/text_view_dish_name_one"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/image_view_dish_one"
+                android:layout_below="@+id/text_view_dish_name_one"
+                android:id="@+id/text_view_dish_description_one"/>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:id="@+id/text_view_dish_quantity_one"/>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/layout_dish_two">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/lightGrey" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/image_view_dish_two"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/image_view_dish_two"
+                android:id="@+id/text_view_dish_name_two"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@+id/text_view_dish_name_two"
+                android:layout_toRightOf="@+id/image_view_dish_two"
+                android:id="@+id/text_view_dish_description_two"/>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:id="@+id/text_view_dish_quantity_two"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightGrey" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_view_total_amount"
+            android:gravity="right"/>
+
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
