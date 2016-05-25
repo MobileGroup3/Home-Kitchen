@@ -1,14 +1,14 @@
 [
     {
-        "merged": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/res/merged/debug/menu/options_menu.xml",
-        "source": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/src/main/res/menu/options_menu.xml"
+        "merged": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/res/merged/debug/menu/options_menu.xml",
+        "source": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/src/main/res/menu/options_menu.xml"
     },
     {
-        "merged": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/res/merged/debug/menu/activity_navigation_drawer.xml",
-        "source": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/exploded-aar/HomeKitchenProject/app/unspecified/res/menu/activity_navigation_drawer.xml"
+        "merged": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/res/merged/debug/menu/navigation.xml",
+        "source": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/exploded-aar/Home-Kitchen/app/unspecified/res/menu/navigation.xml"
     },
     {
-        "merged": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/res/merged/debug/menu/navigation.xml",
-        "source": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/exploded-aar/HomeKitchenProject/app/unspecified/res/menu/navigation.xml"
+        "merged": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/res/merged/debug/menu/activity_navigation_drawer.xml",
+        "source": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/exploded-aar/Home-Kitchen/app/unspecified/res/menu/activity_navigation_drawer.xml"
     }
 ]

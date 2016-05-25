@@ -4,7 +4,7 @@
     api-level="22"
     density="xxhdpi"
     format="7"
-    timestamp="42642069287063" >
+    timestamp="49836881698760" >
 
     <task
         name="javac"
@@ -19,26 +19,16 @@
         name="verifier"
         duration="0" />
 
-    <artifact
-        location="/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex"
-        type="DEX" />
-
-    <build timestamp="41018714155112" >
+    <build timestamp="49557878883974" >
         <artifact
-            location="/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/outputs/apk/HK3-Login-debug.apk"
+            location="/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/outputs/apk/HK3-Login-debug.apk"
             type="MAIN" />
     </build>
-    <build
-        timestamp="42469096364982"
-        verifier="PARENT_CLASS_CHANGED" >
+    <build timestamp="49805180670174" >
         <artifact
-            location="/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex"
-            type="DEX" />
+            location="/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/res/resources-debug.ap_"
+            type="RESOURCES" />
     </build>
-    <build timestamp="42642069287063" >
-        <artifact
-            location="/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex"
-            type="DEX" />
-    </build>
+    <build timestamp="49836881698760" />
 
 </instant-run>

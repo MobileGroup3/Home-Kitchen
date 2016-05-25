@@ -10,8 +10,6 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/HK3-Login" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/kitchen_list" />
-            <option value="$PROJECT_DIR$/placingorder" />
           </set>
         </option>
         <option name="myModules">
@@ -19,8 +17,6 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/HK3-Login" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/kitchen_list" />
-            <option value="$PROJECT_DIR$/placingorder" />
           </set>
         </option>
       </GradleProjectSettings>

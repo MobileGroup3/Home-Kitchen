@@ -1,186 +1,198 @@
 [
     {
-        "merged": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/res/merged/debug/drawable/smooth.jpg",
-        "source": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/src/main/res/drawable/smooth.jpg"
+        "merged": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background_light.xml",
+        "source": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_dialog_material_background_light.xml"
     },
     {
-        "merged": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_seekbar_thumb_material.xml",
-        "source": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_seekbar_thumb_material.xml"
+        "merged": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_tab_indicator_material.xml",
+        "source": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_tab_indicator_material.xml"
     },
     {
-        "merged": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_dark.xml",
-        "source": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_list_selector_holo_dark.xml"
+        "merged": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_ratingbar_indicator_material.xml",
+        "source": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_ratingbar_indicator_material.xml"
     },
     {
-        "merged": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/res/merged/debug/drawable/btn_facebook_bg.png",
-        "source": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/src/main/res/drawable/btn_facebook_bg.png"
+        "merged": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/res/merged/debug/drawable/icon_profile.png",
+        "source": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/src/main/res/drawable/icon_profile.png"
     },
     {
-        "merged": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/res/merged/debug/drawable/icon_favorite.png",
-        "source": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/src/main/res/drawable/icon_favorite.png"
+        "merged": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/res/merged/debug/drawable/icon_order_history.png",
+        "source": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/src/main/res/drawable/icon_order_history.png"
     },
     {
-        "merged": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/res/merged/debug/drawable/hongkong_food.jpg",
-        "source": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/src/main/res/drawable/hongkong_food.jpg"
+        "merged": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/res/merged/debug/drawable/smooth.jpg",
+        "source": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/src/main/res/drawable/smooth.jpg"
     },
     {
-        "merged": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_seekbar_track_material.xml",
-        "source": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_seekbar_track_material.xml"
+        "merged": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/res/merged/debug/drawable/btn_twitter_bg.png",
+        "source": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/src/main/res/drawable/btn_twitter_bg.png"
     },
     {
-        "merged": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/res/merged/debug/drawable/design_snackbar_background.xml",
-        "source": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/exploded-aar/com.android.support/design/23.3.0/res/drawable/design_snackbar_background.xml"
+        "merged": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_edit_text_material.xml",
+        "source": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_edit_text_material.xml"
     },
     {
-        "merged": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/res/merged/debug/drawable/shao_mai.jpeg",
-        "source": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/src/main/res/drawable/shao_mai.jpeg"
+        "merged": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/res/merged/debug/drawable/side_nav_bar.xml",
+        "source": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/src/main/res/drawable/side_nav_bar.xml"
     },
     {
-        "merged": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/res/merged/debug/drawable/kitchen_studio.jpg",
-        "source": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/src/main/res/drawable/kitchen_studio.jpg"
+        "merged": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_dark.xml",
+        "source": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_list_selector_holo_dark.xml"
     },
     {
-        "merged": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/res/merged/debug/drawable/design_fab_background.xml",
-        "source": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/exploded-aar/com.android.support/design/23.3.0/res/drawable/design_fab_background.xml"
+        "merged": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/res/merged/debug/drawable/design_snackbar_background.xml",
+        "source": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/exploded-aar/com.android.support/design/23.3.0/res/drawable/design_snackbar_background.xml"
     },
     {
-        "merged": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_ratingbar_full_material.xml",
-        "source": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_ratingbar_full_material.xml"
+        "merged": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/res/merged/debug/drawable/hongkong_food.jpg",
+        "source": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/src/main/res/drawable/hongkong_food.jpg"
     },
     {
-        "merged": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_tab_indicator_material.xml",
-        "source": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_tab_indicator_material.xml"
+        "merged": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_ratingbar_small_material.xml",
+        "source": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_ratingbar_small_material.xml"
     },
     {
-        "merged": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml",
-        "source": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_cab_background_top_material.xml"
+        "merged": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
+        "source": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_spinner_textfield_background_material.xml"
     },
     {
-        "merged": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/res/merged/debug/drawable/icon_order_history.png",
-        "source": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/src/main/res/drawable/icon_order_history.png"
+        "merged": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/res/merged/debug/drawable/phone_icon.png",
+        "source": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/src/main/res/drawable/phone_icon.png"
     },
     {
-        "merged": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/res/merged/debug/drawable/xiang_guo.jpg",
-        "source": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/src/main/res/drawable/xiang_guo.jpg"
+        "merged": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/res/merged/debug/drawable/dish_icon.png",
+        "source": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/src/main/res/drawable/dish_icon.png"
     },
     {
-        "merged": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_light.xml",
-        "source": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_item_background_holo_light.xml"
+        "merged": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_seekbar_track_material.xml",
+        "source": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_seekbar_track_material.xml"
     },
     {
-        "merged": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_btn_colored_material.xml",
-        "source": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_btn_colored_material.xml"
+        "merged": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_textfield_search_material.xml",
+        "source": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_textfield_search_material.xml"
     },
     {
-        "merged": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_dark.xml",
-        "source": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_item_background_holo_dark.xml"
+        "merged": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_cab_background_internal_bg.xml",
+        "source": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_cab_background_internal_bg.xml"
     },
     {
-        "merged": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_light.xml",
-        "source": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_list_selector_background_transition_holo_light.xml"
+        "merged": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/res/merged/debug/drawable/btn_google_bg.png",
+        "source": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/src/main/res/drawable/btn_google_bg.png"
     },
     {
-        "merged": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/res/merged/debug/drawable/icon_profile.png",
-        "source": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/src/main/res/drawable/icon_profile.png"
+        "merged": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_dark.xml",
+        "source": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
     },
     {
-        "merged": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_btn_radio_material.xml",
-        "source": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_btn_radio_material.xml"
+        "merged": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/res/merged/debug/drawable/cake.jpg",
+        "source": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/src/main/res/drawable/cake.jpg"
     },
     {
-        "merged": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/res/merged/debug/drawable/icon_shopping_cart.png",
-        "source": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/src/main/res/drawable/icon_shopping_cart.png"
+        "merged": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/res/merged/debug/drawable/icon_shopping_cart.png",
+        "source": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/src/main/res/drawable/icon_shopping_cart.png"
     },
     {
-        "merged": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_dark.xml",
-        "source": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
+        "merged": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/res/merged/debug/drawable/icon_setting.png",
+        "source": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/src/main/res/drawable/icon_setting.png"
     },
     {
-        "merged": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/res/merged/debug/drawable/cake.jpg",
-        "source": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/src/main/res/drawable/cake.jpg"
+        "merged": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_light.xml",
+        "source": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_list_selector_holo_light.xml"
     },
     {
-        "merged": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_switch_thumb_material.xml",
-        "source": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_switch_thumb_material.xml"
+        "merged": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/res/merged/debug/drawable/shao_mai.jpeg",
+        "source": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/src/main/res/drawable/shao_mai.jpeg"
     },
     {
-        "merged": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_textfield_search_material.xml",
-        "source": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_textfield_search_material.xml"
+        "merged": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_light.xml",
+        "source": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_item_background_holo_light.xml"
     },
     {
-        "merged": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/res/merged/debug/drawable/icon_setting.png",
-        "source": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/src/main/res/drawable/icon_setting.png"
+        "merged": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_btn_check_material.xml",
+        "source": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_btn_check_material.xml"
     },
     {
-        "merged": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_text_cursor_material.xml",
-        "source": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_text_cursor_material.xml"
+        "merged": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_dark.xml",
+        "source": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_item_background_holo_dark.xml"
     },
     {
-        "merged": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/res/merged/debug/drawable/side_nav_bar.xml",
-        "source": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/src/main/res/drawable/side_nav_bar.xml"
+        "merged": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/res/merged/debug/drawable/btn_facebook_bg.png",
+        "source": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/src/main/res/drawable/btn_facebook_bg.png"
     },
     {
-        "merged": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_cab_background_internal_bg.xml",
-        "source": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_cab_background_internal_bg.xml"
+        "merged": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_light.xml",
+        "source": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_list_selector_background_transition_holo_light.xml"
     },
     {
-        "merged": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
-        "source": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_spinner_textfield_background_material.xml"
+        "merged": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_btn_colored_material.xml",
+        "source": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_btn_colored_material.xml"
     },
     {
-        "merged": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background_light.xml",
-        "source": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_dialog_material_background_light.xml"
+        "merged": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/res/merged/debug/drawable/design_fab_background.xml",
+        "source": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/exploded-aar/com.android.support/design/23.3.0/res/drawable/design_fab_background.xml"
     },
     {
-        "merged": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/res/merged/debug/drawable/icon.png",
-        "source": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/src/main/res/drawable/icon.png"
+        "merged": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_switch_thumb_material.xml",
+        "source": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_switch_thumb_material.xml"
     },
     {
-        "merged": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/res/merged/debug/drawable/bottle.jpg",
-        "source": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/src/main/res/drawable/bottle.jpg"
+        "merged": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml",
+        "source": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_btn_default_mtrl_shape.xml"
     },
     {
-        "merged": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_light.xml",
-        "source": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_list_selector_holo_light.xml"
+        "merged": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_btn_borderless_material.xml",
+        "source": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_btn_borderless_material.xml"
     },
     {
-        "merged": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_btn_borderless_material.xml",
-        "source": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_btn_borderless_material.xml"
+        "merged": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/res/merged/debug/drawable/kitchen_studio.jpg",
+        "source": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/src/main/res/drawable/kitchen_studio.jpg"
     },
     {
-        "merged": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml",
-        "source": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_btn_default_mtrl_shape.xml"
+        "merged": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_ratingbar_full_material.xml",
+        "source": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_ratingbar_full_material.xml"
     },
     {
-        "merged": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_ratingbar_small_material.xml",
-        "source": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_ratingbar_small_material.xml"
+        "merged": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml",
+        "source": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_cab_background_top_material.xml"
     },
     {
-        "merged": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/res/merged/debug/drawable/btn_google_bg.png",
-        "source": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/src/main/res/drawable/btn_google_bg.png"
+        "merged": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/res/merged/debug/drawable/xiang_guo.jpg",
+        "source": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/src/main/res/drawable/xiang_guo.jpg"
     },
     {
-        "merged": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background_dark.xml",
-        "source": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_dialog_material_background_dark.xml"
+        "merged": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/res/merged/debug/drawable/bottle.jpg",
+        "source": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/src/main/res/drawable/bottle.jpg"
     },
     {
-        "merged": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/res/merged/debug/drawable/icon_avatar.png",
-        "source": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/src/main/res/drawable/icon_avatar.png"
+        "merged": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/res/merged/debug/drawable/icon.png",
+        "source": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/src/main/res/drawable/icon.png"
     },
     {
-        "merged": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/res/merged/debug/drawable/btn_twitter_bg.png",
-        "source": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/src/main/res/drawable/btn_twitter_bg.png"
+        "merged": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/res/merged/debug/drawable/icon_avatar.png",
+        "source": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/src/main/res/drawable/icon_avatar.png"
     },
     {
-        "merged": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_ratingbar_indicator_material.xml",
-        "source": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_ratingbar_indicator_material.xml"
+        "merged": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_text_cursor_material.xml",
+        "source": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_text_cursor_material.xml"
     },
     {
-        "merged": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_edit_text_material.xml",
-        "source": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_edit_text_material.xml"
+        "merged": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_seekbar_thumb_material.xml",
+        "source": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_seekbar_thumb_material.xml"
     },
     {
-        "merged": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_btn_check_material.xml",
-        "source": "/Users/yizhou/Documents/SCU/android workspace/HomeKitchenProject/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_btn_check_material.xml"
+        "merged": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background_dark.xml",
+        "source": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_dialog_material_background_dark.xml"
+    },
+    {
+        "merged": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/res/merged/debug/drawable/unfollow_icon.png",
+        "source": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/src/main/res/drawable/unfollow_icon.png"
+    },
+    {
+        "merged": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/res/merged/debug/drawable/icon_favorite.png",
+        "source": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/src/main/res/drawable/icon_favorite.png"
+    },
+    {
+        "merged": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/res/merged/debug/drawable/abc_btn_radio_material.xml",
+        "source": "/Users/yizhou/Documents/SCU/android workspace/Home-Kitchen/HK3-Login/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable/abc_btn_radio_material.xml"
     }
 ]
